@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    
+    <div class="navButtons">
+        <button id="all" dataAttributs="allClass" onclick="filterImages('all')">All</button>
+        <button id="nature" dataAttributs="natureClass"  onclick="filterImages('nature')">Nature</button>
+        <button id="food" dataAttributs="foodClass"  onclick="filterImages('food')">Food</button>
+        <button id="animals" dataAttributs="animalsClass"  onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <div class="Gallery">
+        <div class="imageCard" id="imageID">
+            <img class="img1" src="animals.jpg" alt="animals">
+        </div>
+        <div class="imageCard" id="imageID">
+            <img class="img2" src="nature.jpg" alt="nature">
+        </div>
+        <div class="imageCard" id="imageID">
+            <img class="img3" src="food.jpg" alt="food">
+        </div>
+    </div>
+
+</body>
+<script src="filter.js"></script>
+</html>

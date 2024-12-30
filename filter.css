@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    padding: 10px;
+    margin-left: 65px;
+}
+
+
+.navButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+
+.navButtons button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 90px;
+    background-color: #ffa055; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+
+.navButtons button:hover, 
+.navButtons button:focus {
+    background-color: white; 
+    transform: scale(1.05);
+    color: black;
+}
+
+.Gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.imageCard {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.imageCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
